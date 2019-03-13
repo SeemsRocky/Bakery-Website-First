@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Malay Bakery</title>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  	    <link rel="stylesheet" type="text/css" href="style.css">.
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  		<script src="validation.js" type="text/javascript"></script>
+  		<style>
+  			input
+  			{
+  				width:70px;
+  				height:30px;
+  				margin-left:25px;
+  				text-align:center;
+  			}
+  		</style>
+	</head>
+	<body>
+		<form class="container" action="processorder.php" method="POST">
+			<table class ="table"> 
+				<thead>
+					<tr>
+						<th scope="col"> Name </th>
+						<th scope="col"> Price </th>
+						<th scope="col"> Quantity </th> 
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr> 
+						<th scope="row" class="Category"> Popular </th> 
+					</tr>
+
+					<tr>
+						<th scope="row">Hot Dog Bao</th> 
+						<td> $0.80 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td> 
+					</tr>
+					<tr>
+						<th scope="row">Pineapple Bao </th>
+						<td> $0.80 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>
+					<tr>
+						<th scope="row">Egg Tart </th>
+						<td> $0.50 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>
+					<tr>
+						<th scope="row">Dry Pork Bao </th>
+						<td> $0.80 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr> 
+					<tr>
+						<th scope="row">Roast Pork Bao </th>
+						<td> $0.80 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>
+
+					<tr> 
+						<th scope="row" class="Category"> Baos </th>
+						<td> </td> 
+						<td> </td>
+					</tr>
+
+					<tr>
+						<th scope="row"> Steamed Pork Bun </th>
+						<td> $0.90 </td>
+						<td> <input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>
+
+					<tr> 
+						<th scope="row" class="Category"> Cakes </th>
+					</tr>
+					<tr>
+						<th scope="row">Neopolitan </th>
+						<td> $1.50 </td>
+						<td> <input type="number" name="foodid[]" step="1" min="0" max="100" value="0">  </td>
+					</tr>
+					<tr>
+						<th scope="row">Vanilla Sponge Cake </th>
+						<td> $0.90 </td>
+						<td> <input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr> 
+					<tr>
+						<th scope="row">Lemon Sponge Roll </th>
+						<td> $1.00</td>
+						<td> <input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>
+					<tr> 
+						<th scope="row" class="Category"> Drinks </th>
+					</tr>
+					<tr>
+						<th scope="row"> Coffee </th>
+						<td> $0.80 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>  
+					<tr>
+						<th scope="row"> Milk Tea </th>
+						<td> $0.80 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>  
+					<tr>
+						<th scope="row"> Chocolate </th>
+						<td> $0.70 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>  
+					<tr>
+						<th scope="row"> Ovaltine </th>
+						<td> $0.70 </td> 
+						<td><input type="number" name="foodid[]" step="1" min="0" max="100" value="0"> </td>
+					</tr>  
+				</tbody>
+		</table>
+		
+		<input type="submit" class="float-left">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Details</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <h2>Create your account</h2>
+
+        <form name="signup" action="signupComplete.php" method="POST"> 
+            <div>
+                <div id="name"> 
+                    <input type="text" name="firstname" pattern="[A-Za-z]+{255}" placeholder="First Name" required> 
+                    <input type="text" name="lastname" pattern="[A-Za-z]+{255}" placeholder="Last Name" required> 
+                </div>
+
+                <div id = "address">
+                    <input type="text" name="address" placeholder="Address" required>
+                </div>
+
+                <div>
+                    <input type="tel" name ="phonenumber" pattern="[0-9]{3}-*[0-9]{3}-*[0-9]{4}" placeholder="Phone Number" title="Please enter in this format 123-123-1234" required>
+                </div>
+
+                <div>
+                    <input type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" title = "RealEmail123@mail.com" required> 
+                </div>
+                <div>
+                    <input type="password" name ="password" pattern="^.{6,}$" placeholder="Password"  title="Need 6 or more characters!" required>
+                </div>
+                <div> <!-- ^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~])*@[a-zA-Z](-?[a-zA-Z0-9])*(\.[a-zA-Z](-?[a-zA-Z0-9])*)+$ -->
+                    <button type="submit" value="submit" name="submit"> Create account </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome back to Malay bakery!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <h2>Welcome back to Malay bakery!</h2>
+
+        <form action="login.php" method="POST"> 
+            <div>
+                <div>
+                    <input type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" required> 
+                </div>
+                <div>
+                    <input type="password" name ="password" placeholder=Password>
+                </div>
+                <div>
+                    <button type="submit" value="submit" name="submit"> Log in </button>
+                </div>
+            </div>
+        </form>
+        <div id="signup"> Don't have an account with us? Dont worry! <a href="signup.html"> Sign up here!</a> </div>
+    </body>
+</html>
